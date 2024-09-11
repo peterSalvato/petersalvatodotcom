@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@-ms-viewport {
+  width: device-width;
+}
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  background: white;
+  font-size: 16px;
+  font-family: "Inconsolata", Monospace;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  background-color: transparent;
+  color: white;
+}
+
+::selection {
+  background-color: transparent;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  height: 5rem;
+  position: absolute;
+  width: 100%;
+}
+header h1 {
+  display: inline-block;
+  color: #444;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: lowercase;
+  margin-left: 1rem;
+}
+header h1:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2rem;
+  height: 11rem;
+  width: 11rem;
+  background: url("/assets/images/psdotcom.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(-3deg);
+}
+header h1 .pageTitle {
+  padding: 0.25rem;
+}
+header h1 span {
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-left: 1rem;
+  display: block;
+}
+
+aside {
+  width: 200px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  bottom: 2rem;
+  border-right: 1px solid #ccc;
+  overflow-y: scroll;
+  z-index: 9999;
+}
+aside a {
+  display: block;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+}
+
+#mainContent {
+  padding-left: 200px;
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  top: 0;
+  bottom: 2rem;
+  width: 100%;
+  overflow-y: auto;
+}
+#mainContent > span {
+  padding: 0.25rem;
+}
+#mainContent .contentBox, #mainContent .pen {
+  margin: 1rem;
+  border: 1px dashed #ccc;
+  height: 30rem;
+}
+#mainContent .contentBox > div, #mainContent .contentBox iframe, #mainContent .pen > div, #mainContent .pen iframe {
+  height: 100%;
+}
+#mainContent .contentBox:last-of-type, #mainContent .pen:last-of-type {
+  margin-bottom: 0;
+}
+
+footer {
+  height: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer p {
+  text-align: center;
+}
+
+html#dizzy {
+  height: 100vh;
+  background-color: #386820;
+  @import "cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css";
+}
+html#dizzy body {
+  height: unset;
+  background: unset;
+}
+html#dizzy button {
+  font-size: 2rem;
+  margin: 3rem auto;
+  padding: 1rem;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px -2px black;
+  font-family: "Special Elite", sans serif;
+}
+html#dizzy button:hover {
+  position: relative;
+  top: -2px;
+  box-shadow: 0 4px 5px -3px black;
+}
+html#dizzy iframe {
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 0 5px 15px -4px black;
+}
+html#dizzy .screen-reader-text {
+  /* Reusable, toolbox kind of class */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+html#dizzy .disabled {
+  color: #666;
+  cursor: default;
+}
+html#dizzy .show {
+  display: inline-block !important;
+}
+html#dizzy body {
+  margin: 10px 0 0 0;
+}
+html#dizzy body .container {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1em;
+  margin: 0 auto;
+  width: 350px;
+  background: white;
+}
+html#dizzy body .container.hide {
+  display: none;
+}
+html#dizzy body .container .player {
+  border: 1px solid #ccc;
+  /* Small devices (tablets, 768px and up) */
+  /* Medium devices (desktops, 992px and up) */
+  /* Large devices (large desktops, 1200px and up) */
+}
+html#dizzy body .container .player .artwork {
+  height: 10rem;
+  background-color: yellow;
+  background: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_3aqqcccA-Ig%2FTRN2_v-DWJI%2FAAAAAAAAPOk%2FMe6HFhixMRs%2Fs1600%2Feloso.jpg&f=1&nofb=1);
+  background-size: 32rem;
+  background-repeat: norepeat;
+  background-position: center -9.7rem;
+}
+html#dizzy body .container .player .artwork:before {
+  content: "10.23.98";
+  font-family: "Special Elite", sans serif;
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+}
+html#dizzy body .container .player .playerContent {
+  display: grid;
+  grid-template-columns: 4rem 1fr 6rem;
+  height: 4rem;
+}
+html#dizzy body .container .player .playerContent > * {
+  text-align: center;
+}
+html#dizzy body .container .player .playerContent .large-toggle-btn .large-play-btn:before {
+  content: "\f04b";
+  font: 1.5em/1.75 "FontAwesome";
+}
+html#dizzy body .container .player .playerContent .large-toggle-btn .large-pause-btn {
+  cursor: pointer;
+}
+html#dizzy body .container .player .playerContent .large-toggle-btn .large-pause-btn:before {
+  content: "\f04c";
+  font: 1.5em/1.75 "FontAwesome";
+}
+html#dizzy body .container .player .playerContent .info-box {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  align-items: center;
+  justify-content: center;
+}
+html#dizzy body .container .player .playerContent .info-box > * {
+  width: 100%;
+}
+html#dizzy body .container .player .playerContent .info-box .track-info-box {
+  visibility: hidden;
+  font-size: 0.7rem;
+  *zoom: 1;
+}
+html#dizzy body .container .player .playerContent .info-box .track-info-box .track-title-text {
+  display: inline-block;
+}
+html#dizzy body .container .player .playerContent .info-box .track-info-box .audio-time {
+  display: inline-block;
+}
+html#dizzy body .container .player .playerContent .info-box .track-info-box:before, html#dizzy body .container .player .playerContent .info-box .track-info-box:after {
+  content: " ";
+  display: table;
+}
+html#dizzy body .container .player .playerContent .info-box .track-info-box:after {
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+html#dizzy body .container .player .playerContent .progress-box {
+  width: 100%;
+  position: relative;
+}
+html#dizzy body .container .player .playerContent .progress-box .progress-cell {
+  height: 12px;
+  position: relative;
+}
+html#dizzy body .container .player .playerContent .progress-box .progress-cell .progress {
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  height: 8px;
+  position: relative;
+  width: auto;
+}
+html#dizzy body .container .player .playerContent .progress-box .progress-cell .progress .progress-buffer {
+  background: #666;
+  height: 100%;
+  width: 0;
+}
+html#dizzy body .container .player .playerContent .progress-box .progress-cell .progress .progress-indicator {
+  background: #fff;
+  border: 1px solid #bebebe;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 10px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -2px;
+  width: 22px;
+}
+html#dizzy body .container .player .playerContent .controls-box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 0.75rem;
+}
+html#dizzy body .container .player .playerContent .controls-box .previous-track-btn {
+  cursor: pointer;
+  display: inline-block;
+}
+html#dizzy body .container .player .playerContent .controls-box .previous-track-btn:before {
+  content: "\f04a";
+  font: 1em "FontAwesome";
+}
+html#dizzy body .container .player .playerContent .controls-box .next-track-btn {
+  cursor: pointer;
+  display: inline-block;
+}
+html#dizzy body .container .player .playerContent .controls-box .next-track-btn:before {
+  content: "\f04e";
+  font: 1em "FontAwesome";
+}
+html#dizzy body .container .play-list {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 100%;
+  background: #eee;
+  height: 20rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+html#dizzy body .container .play-list .play-list-row {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 0.5rem;
+  *zoom: 1;
+}
+html#dizzy body .container .play-list .play-list-row .small-toggle-btn {
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 20px;
+}
+html#dizzy body .container .play-list .play-list-row .small-toggle-btn .small-play-btn {
+  display: inline-block;
+}
+html#dizzy body .container .play-list .play-list-row .small-toggle-btn .small-play-btn:before {
+  content: "\f04b";
+  font: 0.85em "FontAwesome";
+}
+html#dizzy body .container .play-list .play-list-row .small-toggle-btn .small-pause-btn {
+  display: inline-block;
+}
+html#dizzy body .container .play-list .play-list-row .small-toggle-btn .small-pause-btn:before {
+  content: "\f04c";
+  font: 0.85em "FontAwesome";
+}
+html#dizzy body .container .play-list .play-list-row .track-number {
+  display: inline-block;
+}
+html#dizzy body .container .play-list .play-list-row .track-title {
+  display: inline-block;
+}
+html#dizzy body .container .play-list .play-list-row .track-title .playlist-track {
+  color: #000;
+  text-decoration: none;
+}
+html#dizzy body .container .play-list .play-list-row .track-title .playlist-track:hover {
+  text-decoration: underline;
+}
+html#dizzy body .container .play-list .play-list-row .track-title .playlist-track {
+  text-decoration: none;
+}
+html#dizzy body .container .play-list .play-list-row .track-title .playlist-track:hover {
+  text-decoration: underline;
+}
+html#dizzy body .container .play-list .play-list-row .track-title.active-track {
+  font-weight: bold;
+}
+html#dizzy body .container .play-list .play-list-row:before, html#dizzy body .container .play-list .play-list-row:after {
+  content: " ";
+  display: table;
+}
+html#dizzy body .container .play-list .play-list-row:after {
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=output.css.map */
