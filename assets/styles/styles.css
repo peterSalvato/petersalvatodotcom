@@ -88,6 +88,18 @@ header #navToggle > span {
 header ul {
   padding-left: 1rem !important;
 }
+header > ul {
+  position: absolute;
+  top: 0;
+  right: calc(100% + 0rem);
+  padding: 0rem;
+  margin: 0;
+  word-break: keep-all;
+  overflow: hidden;
+  width: calc(100% - 200px);
+  padding: 0.25rem 0.5rem;
+  transform: rotate(-0.25deg);
+}
 header > ul li {
   cursor: pointer;
 }

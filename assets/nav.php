@@ -63,7 +63,7 @@ $baseDir = '/mnt/c/Users/ptsal/projects/www.petersalvato.com/work';
 $workNav = build_navigation($baseDir, 'work');
 
 // Output the complete HTML for the navigation
-echo '<ul>';  // Start the top-level unordered list
+echo '<ul id="primaryNav">';  // Start the top-level unordered list
 echo '<li data-blep="blup"><a href="#home">Home</a></li>';  // Static 'Home' link
 echo '<li data-blep="blup"><a href="#about">About</a></li>';  // Static 'Home' link
 
