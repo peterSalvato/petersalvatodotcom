@@ -116,7 +116,6 @@ header > ul li.instructionalText {
   margin-left: 1.5rem;
   position: relative;
   z-index: 0;
-  display: none;
 }
 #mainContent #sayHello {
   position: absolute;
