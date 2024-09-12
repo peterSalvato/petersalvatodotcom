@@ -10,7 +10,7 @@
     <section id="mainContent">
     
         <img src="assets/images/P.Cond.png" alt="P">
-        <a id='sayHello' href="mailto:ptsalvato@gmail.com?subject=email from your Website!">Say hello...</a>
+        <a id='sayHello' href="mailto:ptsalvato@gmail.com?subject=email from your Website!">Please Say hello...</a>
 
     </section>
  
