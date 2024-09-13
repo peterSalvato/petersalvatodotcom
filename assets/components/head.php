@@ -14,5 +14,10 @@
     <link rel="stylesheet" href="assets/styles/styles.css"> 
 
     <!-- test comment -->
-
+    <?php
+        // Define configuration constants
+        define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . '/petersalvatodotcom');
+        define('ASSETS_PATH', BASE_PATH . '/assets');
+        // Other configurations...
+    ?>
 </head>

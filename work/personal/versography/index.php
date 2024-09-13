@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <?php include('../../assets/components/head.php'); ?>
+  <?php include('assets/components/head.php'); ?>
   <body>
-    <?php include('../../assets/components/header.php'); ?>
+    <?php include(BASE_PATH . '/assets/components/header.php'); ?>
     
     <section id="mainContent">
       <h1>Versography</h1>
@@ -19,6 +19,6 @@
       </p>
     </section>
  
-    <?php include('../../assets/components/footer.php'); ?>
+    <?php include(BASE_PATH . '/assets/components/footer.php'); ?>
   </body>
 </html>

@@ -57,7 +57,7 @@ function build_navigation($dir, $relativePath = '') {
 }
 
 // Define the base directory for the navigation, change this to the path where your 'work' folder resides
-$baseDir = '/mnt/c/Users/ptsal/projects/www.petersalvato.com/work';
+$baseDir = '/mnt/c/Users/ptsal/projects/petersalvatodotcom/work';
 
 // Generate the navigation HTML for the 'work' directory
 $workNav = build_navigation($baseDir, 'work');
@@ -80,5 +80,41 @@ echo '<li data-blep="blup"><a href="#contact">Contact</a></li>';  // Static 'Hom
 
 
 echo '</ul>';  // Close the top-level unordered list
+
+
+// Loop through each item in the current directory
+foreach ($items as $item) {
+    // Skip '.' and '..' as they represent the current and parent directories
+    if ($item == '.' || $item == '..') continue;
+
+    $currentPath = $dir . '/' . $item;  // Build the full path of the item
+    $relativeItemPath = $relativePath . '/' . $item;  // Build the relative path for linking
+
+    // Debug statement: output each item being processed
+    echo "<!-- Debug: Processing item: $currentPath -->\n";
+
+    // Check if the current item is a file and if it's either 'index.html' or 'index.php'
+    if (is_file($currentPath) && ($item == 'index.html' || $item == 'index.php')) {
+        $hasIndex = true;   // Set the flag indicating that this directory has an index file
+        $indexFile = $item; // Store the name of the index file
+        continue;           // Skip the rest of the loop as we don't need to process index files as directories
+    }
+
+    // If the current item is a directory, add it to the $subDirs array for further processing
+    if (is_dir($currentPath)) {
+        $subDirs[] = $item;
+    }
+}
+// Check if the current item is a file and if it's either 'index.html' or 'index.php'
+if (is_file($currentPath)) {
+    if ($item == 'index.html' || $item == 'index.php') {
+        echo "<!-- Debug: Found index file: $currentPath -->\n";
+        $hasIndex = true;
+        $indexFile = $item;
+    } else {
+        echo "<!-- Debug: File found but not index: $currentPath -->\n";
+    }
+}
+
 
 ?>

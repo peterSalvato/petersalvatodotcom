@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <?php include('/assets/components/head.php'); ?>
+  <?php include('assets/components/head.php'); ?>
   <body>
     <?php include('/assets/components/header.php'); ?>
     
