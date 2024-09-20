@@ -6,6 +6,8 @@
         <span>Problem<span class='space'></span>Solver</span>
     </h2>
     <span id="navToggle">-<br/>-<br/>-</span>
-    <?php include 'assets/nav.php'; ?>
+    <?php include '/mnt/c/Users/ptsal/projects/petersalvatodotcom/assets/nav.php'; ?>
 
 </header>
+
+

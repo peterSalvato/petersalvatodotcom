@@ -4,7 +4,6 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -457,8 +456,6 @@ html, body {
   box-sizing: border-box;
   height: 100%;
   background: white;
-  font-size: 16px;
-  font-family: "Inconsolata", Monospace;
 }
 
 *, *:before, *:after {
